@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+h1 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+}
+.weather {
+  border: 2px solid lightgray;
+  padding: 5px;
+  margin: 15px;
+}
+.current {
+  font-size: 30px;
+}
+.specs {
+  text-align: right;
+  list-style: none;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.forcast {
+  margin-left: 100px;
+  border-color: grey;
+}
+.town {
+  margin-top: -20px;
+  list-style: none;
+  font-size: 40px;
+}
+.submit {
+  font-family: "Raleway", sans-serif;
+}
+.submit:hover {
+  background-color: lightcyan;
+}
+a:visited {
+  color: aliceblue;
+}
+.cLocation {
+  font-family: "Raleway", sans-serif;
+  border-color: gray;
+}
+.cLocation:hover {
+  background-color: lightcyan;
+}
+.search {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+.day1 {
+  position: relative;
+  width: 190px;
+  text-align: center;
+}
+.day2 {
+  position: relative;
+  width: 190px;
+  text-align: center;
+}
+.day3 {
+  position: relative;
+  width: 190px;
+  text-align: center;
+}
+.day4 {
+  position: relative;
+  width: 190px;
+  text-align: center;
+}
+.day5 {
+  position: relative;
+  width: 190px;
+  text-align: center;
+}
+.currentTime {
+  list-style: none;
+}

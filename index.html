@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/13c26c2de5.js" crossorigin="anonymous"></script>
+    <link href="src/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="weather">
+         <div class="container">
+<h1>
+    Change city below
+    <div class="search">
+    <br/>
+    <form id="searches">
+    <input type="text" class="city" placeholder="Search..." id="change">
+    <input type="submit" class="submit" value="Submit">
+    <button class="cLocation" id="cLocation">Current Location</button>
+    </form>     
+</div>
+</h1>
+<h2>
+    <ul>
+        <li class="town" id="location"></li>
+        <li class="currentTime" id= time></li>
+    </ul>
+</h2>
+<ul class="specs">
+    <li class="currentTemp">
+        <img src="C:\Users\capta\OneDrive\Desktop\SheCodes\Plus\Weather Page\src\cloudy.png" alt="cloudy" width="100px">
+        Currently: <span id="cTemp"></span> <a href="#" id="celsius-link"> °C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+    </li>
+    <li id="discription"></li>
+    <li>
+        Wind: <span id="wind"></span>mph
+    </li>
+    <li>
+        Humidity: <span id="humidity"></span>%
+    </li>
+    <li>
+        Precipitation: <span id="precip"></span>%
+    </li>
+</ul>
+<p>
+    <div class="forcast">
+<div class="row">
+    <div class="day1">
+    <div class="card">
+    <div class="col">
+        Sunday
+        <br/>
+        🌤
+        <br/>
+        81℉/56℉
+    </div>
+    </div>
+    </div>
+    <div class="day2">
+    <div class="card">
+    <div class="col">
+        Monday
+        <br/>
+        🌤
+        <br/>
+        86℉/64℉
+    </div>
+    </div>
+    </div>
+    <div class="day3">
+    <div class="card">
+    <div class="col">
+        Tuesday
+        <br/>
+        🌤
+        <br/>
+        91℉/67℉
+    </div>
+    </div>
+    </div>
+    <div class="day4">
+    <div class="card">
+    <div class="col">
+        Wednesday
+        <br/>
+        🌤
+        <br/>
+        92℉/66℉
+    </div>
+    </div>
+    </div>
+    <div class="day5">
+    <div class="card">
+    <div class="col">
+        Thursday
+        <br/>
+        🌤
+        <br/>
+        91℉/66℉
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+   </div> 
+</div>
+</div>
+<a href ="https://github.com/MoeGropp/10-12-22-Current-Project">Open-source Code</a> by Morgan Gropp
+<script type= "text" src="index.js"></script>
+</body>
+</html>
