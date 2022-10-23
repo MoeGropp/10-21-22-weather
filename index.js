@@ -56,13 +56,14 @@ function currentLocation(event) {
 
 function convertToFar(event) {
   event.preventDefault();
+  let convert = (celsius * 9) / 5 + 32;
   let temp = document.querySelector("#currentTemp");
-  temp.innerHTML = 66;
+  temp.innerHTML = Math.round(convert);
 }
 function convertToCel(event) {
   event.preventDefault();
   let temp = document.querySelector("#currentTemp");
-  temp.innerHTML = 19;
+  temp.innerHTML = Math.round();
 }
 
 let far = document.querySelector("#fahrenheit-link");
