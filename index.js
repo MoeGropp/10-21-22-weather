@@ -77,6 +77,6 @@ city.innerHTML = currentTime(now);
 let search = document.querySelector("#searches");
 search.addEventListener("submit", searching);
 
-newCity("Paris");
+newCity("");
 let cLocationButton = document.querySelector("#cLocation");
 cLocationButton.addEventListener("click", currentLocation);
