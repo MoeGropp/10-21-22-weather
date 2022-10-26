@@ -56,8 +56,8 @@ function currentLocation(event) {
 
 function convertToFar(event) {
   event.preventDefault();
-  let temp = document.querySelector("#currentTemp");
-  temp.innerHTML = Math.round((0 * 9) / 5 + 32);
+  let temp = document.querySelector("#cTemp");
+  temp.innerHTML = Math.round(temp.innerHTML * 9) / 5 + 32);
 }
 function convertToCel(event) {
   event.preventDefault();
