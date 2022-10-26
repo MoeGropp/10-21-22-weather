@@ -62,7 +62,7 @@ function convertToFar(event) {
 function convertToCel(event) {
   event.preventDefault();
   let temp = document.querySelector("#currentTemp");
-  temp.innerHTML = Math.round();
+  temp.innerHTML = Math.round(temp);
 }
 
 let far = document.querySelector("#fahrenheit-link");
