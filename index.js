@@ -31,6 +31,8 @@ function currentTemp(response) {
   );
   document.querySelector("#discription").innerHTML =
     response.data.weather[0].main;
+
+  celsius = response.data.main.temp;
 }
 function newCity(city) {
   let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
@@ -57,7 +59,7 @@ function currentLocation(event) {
 function convertToFar(event) {
   event.preventDefault();
   let temp = document.querySelector("#cTemp");
-  temp.innerHTML = Math.round(temp.innerHTML * 9) / 5 + 32);
+  temp.innerHTML = Math.round((temp.innerHTML * 9) / 5 + 32);
 }
 function convertToCel(event) {
   event.preventDefault();
@@ -74,9 +76,11 @@ let city = document.querySelector("#time");
 let now = new Date();
 city.innerHTML = currentTime(now);
 
-let search = document.querySelector("#searches");
-search.addEventListener("submit", searching);
+let celsius= null;
 
 newCity("");
 let cLocationButton = document.querySelector("#cLocation");
 cLocationButton.addEventListener("click", currentLocation);
+
+let search = document.querySelector("#searches");
+search.addEventListener("submit", searching);
