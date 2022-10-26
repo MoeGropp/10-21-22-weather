@@ -4,7 +4,7 @@ function currentTime(date) {
     hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
-  if (minutes < 10) {
+  if (minutes <= 10) {
     minutes = `0${hours}`;
   }
 
