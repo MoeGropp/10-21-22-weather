@@ -64,7 +64,7 @@ function convertToFar(event) {
 function convertToCel(event) {
   event.preventDefault();
   let temp = document.querySelector("#cTemp");
-  temp.innerHTML = Math.round(temp);
+  temp.innerHTML = Math.round(celsius);
 }
 
 let far = document.querySelector("#fahrenheit-link");
@@ -76,7 +76,7 @@ let city = document.querySelector("#time");
 let now = new Date();
 city.innerHTML = currentTime(now);
 
-let celsius= null;
+let celsius = null;
 
 newCity("");
 let cLocationButton = document.querySelector("#cLocation");
