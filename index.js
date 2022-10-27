@@ -20,6 +20,24 @@ function currentTime(date) {
   ];
   return `${day[currentDay]} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday"];
+  days.forEach(function(day) {
+  forecastHTML = forecastHTML + `
+  <div class="col-2">
+  <div class="fcDay" id="fcDay">${day}</div>
+      <img class="fcImg" src ="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="42"/>
+      <div class = "fcMaxMin">
+     <span class = "fcMax">81℉</span>/<span class="fcMin">56℉</span>
+     </div>
+</div>
+  `;
+});
+forecastHTML = forecastHTML + "</div>";
+  forecastElement.innerHTML= forecastHTML;
+}
 function currentTemp(response) {
   document.querySelector("#location").innerHTML = response.data.name;
   document.querySelector("#cTemp").innerHTML = Math.round(
@@ -77,6 +95,7 @@ let now = new Date();
 city.innerHTML = currentTime(now);
 
 let celsius = null;
+displayForecast();
 
 newCity("");
 let cLocationButton = document.querySelector("#cLocation");
